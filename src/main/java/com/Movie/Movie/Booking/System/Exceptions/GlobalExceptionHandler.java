@@ -28,4 +28,9 @@ public class GlobalExceptionHandler {
         return ResponseEntity.status(HttpStatus.CONFLICT).body(ex.getMessage());
     }
 
+    @ExceptionHandler(UserAlreadyExistedException.class)
+    public ResponseEntity<String> handleUserAlreadyExistedException(UserAlreadyExistedException ex){
+        return ResponseEntity.status(HttpStatus.CONFLICT).body(ex.getMessage());
+    }
+
 }

@@ -16,14 +16,13 @@ import java.util.stream.Collectors;
 @AllArgsConstructor
 public class MyUserDetails implements UserDetails {
 
-    @Autowired
     private UserInfo userInfo;
 
     @Override
     public Collection<? extends GrantedAuthority> getAuthorities() {
         return userInfo.getRoles().
                 stream().
-                map((role -> new SimpleGrantedAuthority("ROLE_" + role))).
+                map((role -> new SimpleGrantedAuthority("ROLE_" + role.getRole()))).
                 collect(Collectors.toList());
     }
 
