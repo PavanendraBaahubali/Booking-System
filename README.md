@@ -15,12 +15,6 @@ The ER diagram showcases the relationships between the entities in the booking s
 - **Seats**: Manages seat details and their status (available/booked).
 - **Bookings**: Handles the booking information for a user, mapping it to specific shows, seats, and movies.
 
-## Sequence Diagram
-
-Here is a high-level sequence diagram that outlines the flow of actions during the booking process:
-
-
-
 ## Features
 
 - Browse available movies by location and theatre.
