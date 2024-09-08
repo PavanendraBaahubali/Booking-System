@@ -5,7 +5,7 @@ This is a movie booking system developed using Spring Boot, MySQL, and Spring Da
 The system allows users to book movie tickets by selecting a movie, location, theatre, and seat. It handles various entities like movies, locations, theatres, shows, seats, and bookings, as depicted in the ER diagram below.
 
 ## ER Diagram
-![Booking System Database Design](./path-to-your-ER-diagram.png)
+![Booking System Database Design](<iframe width="768" height="432" src="https://miro.com/app/live-embed/uXjVKrmLZIM=/?moveToViewport=-1524,245,2589,1199&embedId=435342641416" frameborder="0" scrolling="no" allow="fullscreen; clipboard-read; clipboard-write" allowfullscreen></iframe>)
 
 The ER diagram showcases the relationships between the entities in the booking system. The key entities include:
 - **Movies**: Contains details of the movies like name, genre, language, and duration.
