@@ -19,19 +19,7 @@ The ER diagram showcases the relationships between the entities in the booking s
 
 Here is a high-level sequence diagram that outlines the flow of actions during the booking process:
 
-```mermaid
-sequenceDiagram
-    User->>BookingController: Select movie, location, showtime
-    BookingController->>ShowService: Fetch show details
-    ShowService->>SeatService: Fetch available seats
-    User->>BookingController: Select seat and confirm booking
-    BookingController->>BookingService: Validate seat availability
-    BookingService->>SeatService: Reserve seat
-    BookingService->>PaymentService: Process payment
-    PaymentService->>BookingService: Confirm payment
-    BookingService->>BookingRepository: Save booking details
-    BookingRepository-->>User: Return booking confirmation
-```
+
 
 ## Features
 
